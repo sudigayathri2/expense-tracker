@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .grid-container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: 10px;
+      padding: 20px; 
+    }
+
+    .item2 {
+      grid-column: 2/6; 
+      grid-row: 1/2;
+      width: 20rem;
+      background-image:  linear-gradient(orange, yellow);
+      height: fit-content;
+      flex-direction: column;
+      display:flex;
+	    text-align:centre; 
+	    margin: auto; 
+	    margin-bottom: 40px; 
+	     padding: 5px; 
+          opacity: 0.9;
+}
+
+    .item4,
+    .item5 {
+      grid-column: 2/4; 
+      background-color:seagreen;
+      opacity: 0.9;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      padding-bottom: 5px; 
+    }
+    .item5{
+      display:flex;
+    
+    }
+    .item4{
+      width:fit-content;
+      overflow-y: auto; 
+      margin-right:0px;
+      padding:15px;
+    }
+    .item5 {
+      grid-column: 4/6; 
+      font-size: 15px; 
+      width:fit-content;
+      padding:10px 5px;
+    }
+  </style>
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <nav class="navbar">
+        <div class="logo-container">
+            <img src="https://play-lh.googleusercontent.com/_IA1p-kzpnDyoutaCf9gxWME1fc76UpoLhtvm-5K3Aainu-U0ClZYS8ug-4stKjZu_s" alt="Logo" class="logo" />
+            <span class="brand-name"> Expense Tracker</span>
+        </div>
+        <div class="navbar-links">
+            <a href="https://codepen.io/sudi-gayathri/pen/abXVoXr">Home</a>
+            <a href="#">History</a>
+            <a href="#">Profile</a>
+        </div>
+    </nav>
+  <div class="grid-container">
+    <div class="item2">
+      <div> 
+            <h1>Balance: 
+                <span id="updatedBal"> 
+                      7000 
+                  </span> 
+            </h1> 
+        </div> 
+        <br /> 
+        <div class="total"> 
+            <div> 
+                Total Income: 
+                <div> 
+                    <h2 style="color: green;"
+                        id="updatedInc"> 
+                        25000 
+                    </h2> 
+                </div> 
+            </div> 
+            <hr class="verticle" /> 
+            <div> 
+                Total Expenses: 
+                <div> 
+                    <h2 style="color: red;" 
+                        id="updatedExp"> 
+                        18000 
+                    </h2> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+
+    <div class="item4">
+      <h2>Expenses</h2>
+      <hr>
+      <table id="table">
+        <tr class="titles">
+          <th>S.no.</th>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>Delete</th>
+          <th>date</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="item5">
+      <div class="inputs">
+        <div class="inputitem"><h2>Add new</h2></div>
+        <div class="inputitem">
+          <p style="width: 8rem">Entry type:</p>
+          <select id='itemType'>
+            <option value="0">Expense</option>
+            <option value="1">Income</option>
+          </select>
+        </div>
+        <div class="inputitem">
+          <p style="width: 9rem">Name:</p>
+          <input id="name" type="text" value="" placeholder="name" />
+        </div>
+        <div class="inputitem">
+          <p style="width: 8rem">Amount:</p>
+          <input value="0" id="amount" name="mod" type="number" placeholder="amount" />
+        </div>
+        <div class="inputitem">
+          <p style="width: 8rem">Date:</p>
+          <input type="date" id="expenseDate" />
+        </div>
+      <div class="inputitem">
+      <button onclick="addItem()">Add Expense</button>
+    </div>
+  </div>
+</body>
+</html>
