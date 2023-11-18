@@ -1,0 +1,108 @@
+.inputitem { 
+	display: flex; 
+	flex-direction: row; 
+	font-weight: bolder; 
+	padding: 1%; 
+  font-size:19px;
+} 
+body{
+  margin:0;
+  margin-bottom:5px;
+  background-image: url('https://as1.ftcdn.net/v2/jpg/01/39/81/82/1000_F_139818208_X6kwvRZgya3Ajlnx8UvewaUXyf1uhb94.jpg');
+  
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.vertical { 
+	color: rgb(35, 35, 106); 
+	margin: 0 2%; 
+	border-width: 2px; 
+} 
+.brand-name {
+    font-size: 1.3em;
+    font-weight: bold;
+  color:gold;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar-links a:hover {
+    color: #ffcc00; /* Change to your preferred hover color */
+    
+  font-size:1.2rem;
+  
+}
+
+
+#table { 
+	border-collapse: collapse; 
+	width: 50vw; 
+	border: 1px solid #ddd; 
+	font-size: 18px; 
+} 
+
+/* Table */
+#table th, 
+#table td { 
+	text-align: left; 
+	padding: 10px; 
+} 
+
+/* Table row */
+#table tr { 
+	border-bottom: 1px solid #ddd; 
+  background-color: white; 
+} 
+
+/* Headings*/
+#table tr.titles { 
+	background-color: lightgreen; 
+} 
+.item2{
+  width: 25rem; 
+    display: flex; 
+    flex-direction:row; 
+    text-align: center; 
+    margin: auto; 
+    margin-bottom: 40px; 
+    padding: 1%; 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.total{
+  display: flex; 
+    flex-direction:row; 
+  
+}
+h2{
+  font-size:25px;
+  padding:0px;
+  
+}
+button { 
+	font-size: large; 
+	border-radius: 5px; 
+	padding: 1%; 
+  
+} 
